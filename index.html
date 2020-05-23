@@ -9,13 +9,17 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header sticky-js">
-            <img class="header-title" src="/assets/courflix.png" alt="">
-            <span class="header-options">Inicio</span>
-            <span class="header-options">Series</span>
-            <span class="header-options">Peliculas</span>
-            <span class="header-options">Agregados recientemente</span>
-            <span class="header-options">Mi lista</span>
+        <header class="header" id="inicio">
+            <a href="#" class="link title-link">
+                <img class="header-title" src="/assets/courflix.png" alt="Logo courflix">
+            </a>
+            <nav class="nav">
+                <a href="#" class="header-options">Inicio</a>
+                <a href="#series" class="header-options">Series</a>
+                <a href="#peliculas" class="header-options">Peliculas</a>
+                <a href="#" class="header-options">Agregados recientemente</a>
+                <a href="#" class="header-options">Mi lista</a>
+            </nav>
         </header>
         <main class="main">
             <div class="hero-img">
@@ -24,27 +28,27 @@
                 <a href="#" class="hero-button">Reproducir</a>
                 <a href="#" class="hero-button">+ mi lista</a>
                 <h3 class="hero-series-subtitle">Ve la temporada 1</h3>
-                <h3 class="hero-series-description">Una ansiada luna de miel. Un asesinato terrible. <br> Varios sospechosos. Si sobreviven, seran unas vacaciones de ensueño.</h3>
+                <p class="hero-series-description">Una ansiada luna de miel. Un asesinato terrible. Varios sospechosos. Si sobreviven, seran unas vacaciones de ensueño.</p>
             </div>
             <div class="gradient">
             </div>
             <div class="series-courflix">
-                <div class="carrousel-wrapper">
+                <div class="carousel-wrapper" id="series">
                     <span class="series-title">Series</span>
-                    <div class="series-carrousel">
-                        <img src="/assets/anneWithAnE.png" alt="Anne with an E" class="series-img">
-                        <img src="/assets/Brooklyn99.png" alt="Brooklun 99" class="series-img">
-                        <img src="/assets/girlboss.png" alt="Girlboss" class="series-img">
-                        <img src="/assets/janethevirgin.png" alt="Jane the virgin" class="series-img">
-                        <img src="/assets/sakura.png" alt="Sakura cardcaptor" class="series-img">
-                        <img src="/assets/lucifer.png" alt="Lucifer" class="series-img">
-                        <img src="/assets/flash.png" alt="Flash" class="series-img">
-                        <img src="/assets/arrow.png" alt="Arrow" class="series-img">
+                    <div class="series-carousel">
+                            <img src="/assets/anneWithAnE.png" alt="Anne with an E" class="series-img">
+                            <img src="/assets/Brooklyn99.png" alt="Brooklun 99" class="series-img">
+                            <img src="/assets/girlboss.png" alt="Girlboss" class="series-img">
+                            <img src="/assets/janethevirgin.png" alt="Jane the virgin" class="series-img">
+                            <img src="/assets/sakura.png" alt="Sakura cardcaptor" class="series-img">
+                            <img src="/assets/lucifer.png" alt="Lucifer" class="series-img">
+                            <img src="/assets/flash.png" alt="Flash" class="series-img">
+                            <img src="/assets/arrow.png" alt="Arrow" class="series-img">
                     </div>
                 </div>
-                <div class="carrousel-wrapper">
+                <div class="carousel-wrapper">
                     <span class="series-title">Seguir viendo contenido de Tucu</span>
-                    <div class="series-carrousel">
+                    <div class="series-carousel">
                         <div class="started-series-wrapper">
                             <img src="/assets/yourlieinapril.png" alt="Your lie in april" class="series-img">
                             <div class="grey-loading">
@@ -95,9 +99,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="carrousel-wrapper">
+                <div class="carousel-wrapper" id="peliculas">
                     <span class="series-title">Peliculas</span>
-                    <div class="series-carrousel">
+                    <div class="series-carousel">
                         <img src="/assets/mammamia.png" alt="Mamma mia" class="series-img">
                         <img src="/assets/clueless.png" alt="Clueless" class="series-img">
                         <img src="/assets/readyplayerone.png" alt="Ready player one" class="series-img">

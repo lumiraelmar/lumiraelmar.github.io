@@ -1,13 +1,11 @@
-const header = document.querySelector(".header");
-
-window.onscroll = function() {myFunction()};
-
+const header = document.querySelector('.header');
 const sticky = header.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
+function stickyNavigation() {
+  if (window.scrollY > sticky) {
+    header.classList.add('sticky');
   } else {
-    header.classList.remove("sticky");
+    header.classList.remove('sticky');
   }
 }
+window.addEventListener('scroll', stickyNavigation);

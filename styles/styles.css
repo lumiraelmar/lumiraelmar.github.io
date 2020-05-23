@@ -3,8 +3,12 @@
   box-sizing: border-box;
 }
 
-.sticky + .main {
-  padding-top: 102px;
+html {
+  scroll-behavior: smooth;
+}
+
+.sticky + .wrapper {
+  padding-top: 200px;
 }
 
 .wrapper {
@@ -12,23 +16,36 @@
   font-family: "Open Sans", sans-serif;
 }
 .wrapper .header {
-  background-color: #111;
   display: flex;
   align-items: center;
   font-weight: bold;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.801218);
 }
-.wrapper .header .header-title {
+.wrapper .header .title-link .header-title {
   padding: 13px 85px;
 }
-.wrapper .header .header-options {
+.wrapper .header .nav {
+  white-space: nowrap;
+  display: inline;
+}
+@media (max-width: 800px) {
+  .wrapper .header .nav {
+    display: none;
+  }
+}
+.wrapper .header .nav .header-options {
   color: #fff;
   padding-right: 27px;
+  text-decoration: none;
 }
 .wrapper .sticky {
   position: fixed;
   top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.801218);
+  z-index: 1;
 }
 .wrapper .main {
   background-color: #000;
@@ -54,6 +71,7 @@
   font-weight: bold;
 }
 .wrapper .main .hero-img .hero-button {
+  display: inline-block;
   padding: 15px 45px;
   background: rgba(157, 151, 151, 0.541521);
   border-radius: 5px;
@@ -86,6 +104,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  -ms-overflow-style: none;
 }
 .wrapper .main .series-courflix ::-webkit-scrollbar {
   display: none;
@@ -93,12 +112,12 @@
   width: 0;
   background-color: transparent;
 }
-.wrapper .main .series-courflix .carrousel-wrapper .series-title {
+.wrapper .main .series-courflix .carousel-wrapper .series-title {
   font-size: 1.5rem;
   color: #fff;
   font-weight: bold;
 }
-.wrapper .main .series-courflix .carrousel-wrapper .series-carrousel {
+.wrapper .main .series-courflix .carousel-wrapper .series-carousel {
   display: flex;
   flex-direction: row;
   overflow-x: auto;
@@ -106,42 +125,42 @@
   margin-top: 22px;
   margin-bottom: 50px;
 }
-.wrapper .main .series-courflix .carrousel-wrapper .series-carrousel .series-img {
+.wrapper .main .series-courflix .carousel-wrapper .series-carousel .series-img {
   margin-right: 16px;
   scroll-snap-align: start;
 }
-.wrapper .main .series-courflix .carrousel-wrapper .series-carrousel .started-series-wrapper {
+.wrapper .main .series-courflix .carousel-wrapper .series-carousel .started-series-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.wrapper .main .series-courflix .carrousel-wrapper .series-carrousel .started-series-wrapper .series-img {
+.wrapper .main .series-courflix .carousel-wrapper .series-carousel .started-series-wrapper .series-img {
   margin-right: 16px;
   margin-bottom: 10px;
   scroll-snap-align: start;
 }
-.wrapper .main .series-courflix .carrousel-wrapper .series-carrousel .started-series-wrapper .grey-loading {
+.wrapper .main .series-courflix .carousel-wrapper .series-carousel .started-series-wrapper .grey-loading {
   margin-top: 5px;
   height: 7px;
   width: 280px;
   background-color: grey;
 }
-.wrapper .main .series-courflix .carrousel-wrapper .series-carrousel .started-series-wrapper .grey-loading .red-loading-1 {
+.wrapper .main .series-courflix .carousel-wrapper .series-carousel .started-series-wrapper .grey-loading .red-loading-1 {
   width: 43%;
   background-color: indianred;
   height: 7px;
 }
-.wrapper .main .series-courflix .carrousel-wrapper .series-carrousel .started-series-wrapper .grey-loading .red-loading-2 {
+.wrapper .main .series-courflix .carousel-wrapper .series-carousel .started-series-wrapper .grey-loading .red-loading-2 {
   width: 17%;
   background-color: indianred;
   height: 7px;
 }
-.wrapper .main .series-courflix .carrousel-wrapper .series-carrousel .started-series-wrapper .grey-loading .red-loading-3 {
+.wrapper .main .series-courflix .carousel-wrapper .series-carousel .started-series-wrapper .grey-loading .red-loading-3 {
   width: 90%;
   background-color: indianred;
   height: 7px;
 }
-.wrapper .main .series-courflix .carrousel-wrapper .series-carrousel .started-series-wrapper .grey-loading .red-loading-4 {
+.wrapper .main .series-courflix .carousel-wrapper .series-carousel .started-series-wrapper .grey-loading .red-loading-4 {
   width: 65%;
   background-color: indianred;
   height: 7px;
