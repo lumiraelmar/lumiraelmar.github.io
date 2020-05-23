@@ -55,8 +55,13 @@ html {
 .wrapper .main .hero-img {
   background-image: url(/assets/portada.png);
   background-size: cover;
-  padding: 130px 80px 160px;
+  padding: 190px 80px 130px;
+  min-height: 850px;
   color: #fff;
+  display: block;
+}
+.wrapper .main .hero-img.active {
+  display: none;
 }
 .wrapper .main .hero-img .hero-subtitle {
   font-size: 1.75rem;
@@ -72,13 +77,14 @@ html {
 }
 .wrapper .main .hero-img .hero-button {
   display: inline-block;
-  padding: 15px 45px;
+  padding: 20px 45px;
   background: rgba(157, 151, 151, 0.541521);
   border-radius: 5px;
   margin-right: 25px;
   text-decoration: none;
   color: #fff;
-  font-size: 21px;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 .wrapper .main .hero-img .hero-series-subtitle {
   margin-top: 40px;
@@ -122,10 +128,13 @@ html {
   flex-direction: row;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
+  -webkit-overflow-scrolling: touch;
   margin-top: 22px;
   margin-bottom: 50px;
+  align-items: center;
 }
-.wrapper .main .series-courflix .carousel-wrapper .series-carousel .series-img {
+.wrapper .main .series-courflix .carousel-wrapper .series-carousel .series {
   margin-right: 16px;
   scroll-snap-align: start;
 }
@@ -133,11 +142,11 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 16px;
+  scroll-snap-align: start;
 }
 .wrapper .main .series-courflix .carousel-wrapper .series-carousel .started-series-wrapper .series-img {
-  margin-right: 16px;
   margin-bottom: 10px;
-  scroll-snap-align: start;
 }
 .wrapper .main .series-courflix .carousel-wrapper .series-carousel .started-series-wrapper .grey-loading {
   margin-top: 5px;
@@ -148,22 +157,85 @@ html {
 .wrapper .main .series-courflix .carousel-wrapper .series-carousel .started-series-wrapper .grey-loading .red-loading-1 {
   width: 43%;
   background-color: indianred;
-  height: 7px;
+  height: 100%;
 }
 .wrapper .main .series-courflix .carousel-wrapper .series-carousel .started-series-wrapper .grey-loading .red-loading-2 {
   width: 17%;
   background-color: indianred;
-  height: 7px;
+  height: 100%;
 }
 .wrapper .main .series-courflix .carousel-wrapper .series-carousel .started-series-wrapper .grey-loading .red-loading-3 {
   width: 90%;
   background-color: indianred;
-  height: 7px;
+  height: 100%;
 }
 .wrapper .main .series-courflix .carousel-wrapper .series-carousel .started-series-wrapper .grey-loading .red-loading-4 {
   width: 65%;
   background-color: indianred;
-  height: 7px;
+  height: 100%;
+}
+
+.series-preview {
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #000000 100%), url(/assets/breakingbad04.png);
+  background-size: cover;
+  padding: 50px 80px 130px;
+  color: #fff;
+  min-width: 100vw;
+  min-height: 850px;
+  font-family: "Open Sans", sans-serif;
+  display: none;
+}
+.series-preview.active {
+  display: block;
+}
+.series-preview .series-details {
+  margin: -40px 0 40px;
+}
+.series-preview .series-details .span {
+  margin-right: 10px;
+}
+.series-preview .series-details .coincidence-meter {
+  color: #009C04;
+  font-weight: bold;
+}
+.series-preview .series-details .release-year {
+  color: #FFFFFF;
+}
+.series-preview .series-details .appropiate-age {
+  color: #FFFFFF;
+  padding: 2px 6px;
+  border: 1px solid #979797;
+  border-radius: 8px;
+}
+.series-preview .series-details .seasons-available {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+.series-preview .button {
+  display: inline-block;
+  padding: 20px 45px;
+  background: rgba(157, 151, 151, 0.541521);
+  border-radius: 5px;
+  margin-right: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.series-preview .button-1 {
+  background-color: #ED0A1D;
+}
+.series-preview .far {
+  font-size: 1.5rem;
+  border: 1px solid #fff;
+  border-radius: 50px;
+}
+.series-preview .series-description {
+  margin-top: 35px;
+  font-size: 1.5rem;
+  max-width: 600px;
+  line-height: 2.1rem;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=styles.css.map */

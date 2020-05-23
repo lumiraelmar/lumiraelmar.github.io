@@ -1,0 +1,64 @@
+.series-preview {
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #000000 100%), url(/assets/breakingbad04.png);
+  background-size: cover;
+  padding: 50px 80px 130px;
+  color: #fff;
+  min-width: 100vw;
+  min-height: 850px;
+  font-family: 'Open Sans', sans-serif;
+  display: none;
+  &.active {
+    display: block;
+  }
+  .series-logo {
+  }
+  .series-details {
+    margin: -40px 0 40px;
+    .span{
+      margin-right: 10px;
+    }
+    .coincidence-meter {
+      color: #009C04;
+      font-weight: bold;
+    }
+    .release-year {
+      color: #FFFFFF;
+    }
+    .appropiate-age {
+      color: #FFFFFF;
+      padding: 2px 6px;
+      border: 1px solid #979797;
+      border-radius: 8px;
+    }
+    .seasons-available {
+      color: #FFFFFF;
+      font-weight: bold;
+    }
+  }
+  .button {
+    display: inline-block;
+    padding: 20px 45px;
+    background: rgba(157, 151, 151, 0.541521);
+    border-radius: 5px;
+    margin-right: 25px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+  .button-1 {
+    background-color: #ED0A1D;
+  }
+  .far {
+    font-size: 1.5rem;
+    border: 1px solid #fff;
+    border-radius: 50px;
+  }
+  .series-description {
+    margin-top: 35px;
+    font-size: 1.5rem;
+    max-width: 600px;
+    line-height: 2.1rem;
+    font-weight: 300;
+  }
+}
