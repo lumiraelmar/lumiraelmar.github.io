@@ -1,4 +1,58 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -24,7 +78,7 @@ html {
   background-color: rgba(0, 0, 0, 0.801218);
 }
 .wrapper .header .title-link .header-title {
-  padding: 13px 85px;
+  padding: 12px 85px;
 }
 .wrapper .header .nav {
   white-space: nowrap;
@@ -53,7 +107,7 @@ html {
   flex-direction: column;
 }
 .wrapper .main .hero-img {
-  background-image: url(/assets/portada.png);
+  background-image: url("../assets/portada.png");
   background-size: cover;
   padding: 190px 80px 130px;
   min-height: 850px;
@@ -70,7 +124,6 @@ html {
 }
 .wrapper .main .hero-img .hero-title {
   font-size: 7.5rem;
-  max-width: 550px;
   margin-bottom: 30px;
   line-height: 6.25rem;
   font-weight: bold;
@@ -137,46 +190,42 @@ html {
 .wrapper .main .series-courflix .carousel-wrapper .series-carousel .series {
   margin-right: 16px;
   scroll-snap-align: start;
-}
-.wrapper .main .series-courflix .carousel-wrapper .series-carousel .started-series-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 16px;
-  scroll-snap-align: start;
 }
-.wrapper .main .series-courflix .carousel-wrapper .series-carousel .started-series-wrapper .series-img {
+.wrapper .main .series-courflix .carousel-wrapper .series-carousel .series .preview-link .series-img {
   margin-bottom: 10px;
 }
-.wrapper .main .series-courflix .carousel-wrapper .series-carousel .started-series-wrapper .grey-loading {
+.wrapper .main .series-courflix .carousel-wrapper .series-carousel .series .grey-loading {
   margin-top: 5px;
   height: 7px;
   width: 280px;
   background-color: grey;
 }
-.wrapper .main .series-courflix .carousel-wrapper .series-carousel .started-series-wrapper .grey-loading .red-loading-1 {
+.wrapper .main .series-courflix .carousel-wrapper .series-carousel .series .grey-loading .red-loading-1 {
   width: 43%;
   background-color: indianred;
   height: 100%;
 }
-.wrapper .main .series-courflix .carousel-wrapper .series-carousel .started-series-wrapper .grey-loading .red-loading-2 {
+.wrapper .main .series-courflix .carousel-wrapper .series-carousel .series .grey-loading .red-loading-2 {
   width: 17%;
   background-color: indianred;
   height: 100%;
 }
-.wrapper .main .series-courflix .carousel-wrapper .series-carousel .started-series-wrapper .grey-loading .red-loading-3 {
+.wrapper .main .series-courflix .carousel-wrapper .series-carousel .series .grey-loading .red-loading-3 {
   width: 90%;
   background-color: indianred;
   height: 100%;
 }
-.wrapper .main .series-courflix .carousel-wrapper .series-carousel .started-series-wrapper .grey-loading .red-loading-4 {
+.wrapper .main .series-courflix .carousel-wrapper .series-carousel .series .grey-loading .red-loading-4 {
   width: 65%;
   background-color: indianred;
   height: 100%;
 }
 
 .series-preview {
-  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #000000 100%), url(/assets/breakingbad04.png);
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #000000 100%), url("../assets/breakingbad04.png");
   background-size: cover;
   padding: 50px 80px 130px;
   color: #fff;
