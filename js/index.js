@@ -11,15 +11,15 @@ function clickI() {
   preview.classList.toggle("active");
 }
 
-function home() {
-  hero.classList.toggle("active");
-  preview.classList.toggle("active");
-}
+//function home() {
+  //hero.classList.toggle("active");
+  //preview.classList.toggle("active");
+//}
 
 series.forEach (function(item) {
   item.addEventListener('click', clickI) 
 });
 
-link.forEach (function(item) {
-  item.addEventListener('click', home) 
-});
+//link.forEach (function(item) {
+  //item.addEventListener('click', home) 
+//});
