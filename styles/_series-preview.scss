@@ -1,19 +1,25 @@
 .series-preview {
-  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #000000 100%), url("./assets/breakingbad04.png");
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #000000 100%), url("../assets/breakingbad04.png");
   background-size: cover;
-  padding: 50px 80px 130px;
+  padding: 60px 80px 130px;
   color: #fff;
   min-width: 100vw;
   min-height: 800px;
   font-family: 'Open Sans', sans-serif;
   display: none;
-  .fas {
-    
+
+  .fa-arrow-left {
+    position: absolute;
+    top: 60;
+    left: 30;
+    color: #fff;
+    padding: 25px 0 0;
+    font-size: 2rem;
   }
   .series-logo {
   }
   .series-details {
-    margin: -40px 0 40px;
+    margin: -40px 0 29px;
     .span{
       margin-right: 10px;
     }
@@ -42,7 +48,7 @@
     width: 198px;
     height: 60px;
     background: rgba(157, 151, 151, 0.541521);
-    border-radius: 5px;
+    border-radius: 9px;
     margin-right: 25px;
     text-decoration: none;
     color: #fff;
@@ -63,7 +69,7 @@
     margin-right: 10px;
   }
   .series-description {
-    margin-top: 35px;
+    margin-top: 20px;
     font-size: 1.4rem;
     max-width: 600px;
     line-height: 2.1rem;

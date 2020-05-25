@@ -1,5 +1,5 @@
 const series = document.querySelectorAll(".series-js");
-const link = document.querySelectorAll(".link");
+const link = document.querySelectorAll(".link-js");
 const hero = document.querySelector(".hero-img");
 const preview = document.querySelector(".series-preview");
 
