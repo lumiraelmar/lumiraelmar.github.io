@@ -61,10 +61,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.sticky + .wrapper {
-  padding-top: 200px;
-}
-
 .wrapper {
   min-width: 100vw;
   font-family: "Open Sans", sans-serif;
@@ -75,6 +71,7 @@ html {
   font-weight: bold;
   position: fixed;
   width: 100%;
+  z-index: 10;
   background-color: rgba(0, 0, 0, 0.801218);
 }
 .wrapper .header .title-link .header-title {
@@ -83,6 +80,7 @@ html {
 .wrapper .header .nav {
   white-space: nowrap;
   display: inline;
+  font-size: 1.2rem;
 }
 @media (max-width: 800px) {
   .wrapper .header .nav {
@@ -94,13 +92,6 @@ html {
   padding-right: 27px;
   text-decoration: none;
 }
-.wrapper .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.801218);
-  z-index: 1;
-}
 .wrapper .main {
   background-color: #000;
   display: flex;
@@ -109,8 +100,8 @@ html {
 .wrapper .main .hero-img {
   background-image: url("../assets/portada.png");
   background-size: cover;
-  padding: 190px 80px 130px;
-  min-height: 850px;
+  padding: 175px 80px 130px;
+  min-height: 800px;
   color: #fff;
   display: block;
 }
@@ -118,35 +109,39 @@ html {
   display: none;
 }
 .wrapper .main .hero-img .hero-subtitle {
-  font-size: 1.75rem;
-  margin-bottom: 16px;
+  font-size: 1.5rem;
+  margin-bottom: 18px;
   font-weight: bold;
 }
 .wrapper .main .hero-img .hero-title {
   font-size: 7.5rem;
-  margin-bottom: 30px;
-  line-height: 6.25rem;
+  margin-bottom: 15px;
+  line-height: 6rem;
+  max-width: 650px;
   font-weight: bold;
 }
 .wrapper .main .hero-img .hero-button {
-  display: inline-block;
-  padding: 20px 45px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 198px;
+  height: 60px;
   background: rgba(157, 151, 151, 0.541521);
-  border-radius: 5px;
-  margin-right: 25px;
+  border-radius: 9px;
+  margin-right: 35px;
   text-decoration: none;
   color: #fff;
   font-size: 1.3rem;
   font-weight: 300;
 }
 .wrapper .main .hero-img .hero-series-subtitle {
-  margin-top: 40px;
-  font-size: 1.5rem;
+  margin-top: 20px;
+  font-size: 1.4rem;
 }
 .wrapper .main .hero-img .hero-series-description {
-  margin-top: 20px;
-  font-size: 1.5rem;
-  max-width: 650px;
+  margin-top: 15px;
+  font-size: 1.4rem;
+  max-width: 600px;
   line-height: 2rem;
   font-weight: 300;
 }
@@ -230,7 +225,7 @@ html {
   padding: 50px 80px 130px;
   color: #fff;
   min-width: 100vw;
-  min-height: 850px;
+  min-height: 800px;
   font-family: "Open Sans", sans-serif;
   display: none;
 }
@@ -261,8 +256,11 @@ html {
   font-weight: bold;
 }
 .series-preview .button {
-  display: inline-block;
-  padding: 20px 45px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 198px;
+  height: 60px;
   background: rgba(157, 151, 151, 0.541521);
   border-radius: 5px;
   margin-right: 25px;
@@ -275,13 +273,18 @@ html {
   background-color: #ED0A1D;
 }
 .series-preview .far {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.5rem;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   border-radius: 50px;
+  padding: 7px;
+  margin-right: 10px;
 }
 .series-preview .series-description {
   margin-top: 35px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   max-width: 600px;
   line-height: 2.1rem;
   font-weight: 300;

@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 html { scroll-behavior: smooth; }
-.sticky + .wrapper {
-  padding-top: 200px;
-}
-
 
 .wrapper {
   min-width: 100vw;
@@ -16,6 +12,7 @@ html { scroll-behavior: smooth; }
     font-weight: bold;
     position: fixed;
     width: 100%;
+    z-index: 10;
     background-color: rgba(0, 0, 0, 0.801218);
     .title-link {
       .header-title {
@@ -25,6 +22,7 @@ html { scroll-behavior: smooth; }
     .nav {
       white-space: nowrap;
       display: inline;
+      font-size: 1.2rem;
       @media (max-width: 800px){
       display: none;
       }
@@ -35,13 +33,6 @@ html { scroll-behavior: smooth; }
       }
     }
   }
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.801218);
-    z-index: 1;
-  }
   .main {
     background-color: #000;
     display: flex;
@@ -49,43 +40,47 @@ html { scroll-behavior: smooth; }
     .hero-img {
       background-image: url("../assets/portada.png");
       background-size: cover;
-      padding: 190px 80px 130px;
-      min-height: 850px;
+      padding: 175px 80px 130px;
+      min-height: 800px;
       color: #fff;
       display: block;
       &.active {
         display: none;
       }
       .hero-subtitle {
-        font-size: 1.75rem;
-        margin-bottom: 16px;
+        font-size: 1.5rem;
+        margin-bottom: 18px;
         font-weight: bold;
       }
       .hero-title {
         font-size: 7.5rem;
-        margin-bottom: 30px;
-        line-height: 6.25rem;
+        margin-bottom: 15px;
+        line-height: 6rem;
+        max-width: 650px;
         font-weight: bold;
       }
       .hero-button {
-        display: inline-block;
-        padding: 20px 45px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 198px;
+        height: 60px;
         background: rgba(157, 151, 151, 0.541521);
-        border-radius: 5px;
-        margin-right: 25px;
+        border-radius: 9px;
+        margin-right: 35px;
         text-decoration: none;
         color: #fff;
         font-size: 1.3rem;
         font-weight: 300;
       }
       .hero-series-subtitle {
-        margin-top: 40px;
-        font-size: 1.5rem;
+        margin-top: 20px;
+        font-size: 1.4rem;
       }
       .hero-series-description {
-        margin-top: 20px;
-        font-size: 1.5rem;
-        max-width: 650px;
+        margin-top: 15px;
+        font-size: 1.4rem;
+        max-width: 600px;
         line-height: 2rem;
         font-weight: 300;
       }

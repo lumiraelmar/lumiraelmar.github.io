@@ -4,7 +4,7 @@
   padding: 50px 80px 130px;
   color: #fff;
   min-width: 100vw;
-  min-height: 850px;
+  min-height: 800px;
   font-family: 'Open Sans', sans-serif;
   display: none;
   &.active {
@@ -36,8 +36,11 @@
     }
   }
   .button {
-    display: inline-block;
-    padding: 20px 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 198px;
+    height: 60px;
     background: rgba(157, 151, 151, 0.541521);
     border-radius: 5px;
     margin-right: 25px;
@@ -50,13 +53,18 @@
     background-color: #ED0A1D;
   }
   .far {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.5rem;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     border-radius: 50px;
+    padding: 7px;
+    margin-right: 10px;
   }
   .series-description {
     margin-top: 35px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     max-width: 600px;
     line-height: 2.1rem;
     font-weight: 300;
