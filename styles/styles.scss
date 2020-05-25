@@ -38,7 +38,7 @@ html { scroll-behavior: smooth; }
     display: flex;
     flex-direction: column;
     .hero-img {
-      background-image: url("../assets/portada.png");
+      background-image: url("./assets/portada.png");
       background-size: cover;
       padding: 175px 80px 130px;
       min-height: 800px;
