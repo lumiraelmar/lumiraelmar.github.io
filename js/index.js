@@ -4,22 +4,20 @@ const hero = document.querySelector(".hero-img");
 const preview = document.querySelector(".series-preview");
 
 
-
 function clickI() {
-
-  hero.classList.toggle("active");
-  preview.classList.toggle("active");
+  hero.style.display = "none";
+  preview.style.display = "block";
 }
 
-//function home() {
-  //hero.classList.toggle("active");
-  //preview.classList.toggle("active");
-//}
+function home() {
+  hero.style.display = "block";
+  preview.style.display = "none";
+}
 
 series.forEach (function(item) {
   item.addEventListener('click', clickI) 
 });
 
-//link.forEach (function(item) {
-  //item.addEventListener('click', home) 
-//});
+link.forEach (function(item) {
+  item.addEventListener('click', home) 
+});
