@@ -173,7 +173,7 @@ html {
   min-height: 75vh;
   font-family: "Open Sans", sans-serif;
 }
-@media (max-width: 900px) {
+@media (max-width: 414px) {
   .wrapper .main .series-preview {
     padding: 150px 30px 130px;
     min-height: 40vh;
@@ -187,7 +187,7 @@ html {
   padding: 25px 0 0;
   font-size: 2rem;
 }
-@media (max-width: 900px) {
+@media (max-width: 414px) {
   .wrapper .main .series-preview .series-logo {
     display: none;
   }
@@ -195,7 +195,7 @@ html {
 .wrapper .main .series-preview .preview-title {
   display: none;
 }
-@media (max-width: 900px) {
+@media (max-width: 414px) {
   .wrapper .main .series-preview .preview-title {
     display: block;
     font-size: 1.5rem;
@@ -206,7 +206,7 @@ html {
   margin: -40px 0 29px;
   font-size: 1.1rem;
 }
-@media (max-width: 900px) {
+@media (max-width: 414px) {
   .wrapper .main .series-preview .series-details {
     margin: 15px 0 29px;
   }
@@ -218,7 +218,7 @@ html {
   color: #009C04;
   font-weight: bold;
 }
-@media (max-width: 900px) {
+@media (max-width: 414px) {
   .wrapper .main .series-preview .series-details .coincidence-meter {
     display: none;
   }
@@ -232,7 +232,7 @@ html {
   border: 1px solid #979797;
   border-radius: 8px;
 }
-@media (max-width: 900px) {
+@media (max-width: 414px) {
   .wrapper .main .series-preview .series-details .appropiate-age {
     border: none;
   }
@@ -255,7 +255,7 @@ html {
   font-size: 1.3rem;
   font-weight: 300;
 }
-@media (max-width: 900px) {
+@media (max-width: 414px) {
   .wrapper .main .series-preview .button {
     width: 131px;
     height: 43px;
@@ -276,7 +276,7 @@ html {
   padding: 7px;
   margin-right: 10px;
 }
-@media (max-width: 900px) {
+@media (max-width: 414px) {
   .wrapper .main .series-preview .far {
     display: none;
   }
@@ -288,7 +288,7 @@ html {
   line-height: 2.1rem;
   font-weight: 300;
 }
-@media (max-width: 900px) {
+@media (max-width: 414px) {
   .wrapper .main .series-preview .series-description {
     display: none;
   }
@@ -308,7 +308,7 @@ html {
   width: 100%;
   -ms-overflow-style: none;
 }
-@media (max-width: 900px) {
+@media (max-width: 414px) {
   .wrapper .main .series-courflix {
     padding: 0 30px;
   }
@@ -324,7 +324,7 @@ html {
   color: #fff;
   font-weight: bold;
 }
-@media (max-width: 900px) {
+@media (max-width: 414px) {
   .wrapper .main .series-courflix .carousel-wrapper .series-title {
     font-size: 1.2rem;
   }
@@ -340,7 +340,7 @@ html {
   margin-bottom: 50px;
   align-items: center;
 }
-@media (max-width: 900px) {
+@media (max-width: 414px) {
   .wrapper .main .series-courflix .carousel-wrapper .series-carousel {
     margin-top: 15px;
     margin-bottom: 25px;
@@ -355,7 +355,7 @@ html {
   flex-direction: column;
   align-items: center;
 }
-@media (max-width: 900px) {
+@media (max-width: 414px) {
   .wrapper .main .series-courflix .carousel-wrapper .series-carousel .series {
     display: flex;
     flex-direction: row;
@@ -367,16 +367,16 @@ html {
   width: 341px;
   height: 192px;
 }
-@media (max-width: 900px) {
+@media (max-width: 414px) {
   .wrapper .main .series-courflix .carousel-wrapper .series-carousel .series .preview-link .series-img {
-    width: 221px;
-    height: 124px;
+    width: 131px;
+    height: 75px;
   }
 }
 .wrapper .main .series-courflix .carousel-wrapper .series-carousel .series .episode-info {
   display: none;
 }
-@media (max-width: 900px) {
+@media (max-width: 414px) {
   .wrapper .main .series-courflix .carousel-wrapper .series-carousel .series .episode-info {
     display: flex;
     flex-direction: column;
