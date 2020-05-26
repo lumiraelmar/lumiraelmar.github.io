@@ -114,15 +114,15 @@ html {
   background-image: url("../assets/portada.png");
   background-size: cover;
   background-position: center;
-  padding: 175px 80px 130px;
-  min-height: 75vh;
+  padding: 160px 80px 120px;
+  min-height: 85vh;
   color: #fff;
   display: block;
 }
 @media (max-width: 414px) {
   .wrapper .main .hero-img {
     padding: 100px 30px 150px;
-    min-height: 40vh;
+    min-height: 50vh;
   }
 }
 .wrapper .main .hero-img .hero-subtitle {
@@ -181,7 +181,7 @@ html {
   }
 }
 .wrapper .main .hero-img .hero-series-description {
-  margin-top: 15px;
+  margin-top: 10px;
   font-size: 1.4rem;
   max-width: 600px;
   line-height: 2rem;

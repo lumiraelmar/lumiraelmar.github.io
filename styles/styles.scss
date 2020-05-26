@@ -51,13 +51,13 @@ html { scroll-behavior: smooth; }
       background-image: url("../assets/portada.png");
       background-size: cover;
       background-position: center;
-      padding: 175px 80px 130px;
-      min-height: 75vh;
+      padding: 160px 80px 120px;
+      min-height: 85vh;
       color: #fff;
       display: block;
       @media (max-width: $mobile-size) {
         padding: 100px 30px 150px;
-        min-height: 40vh;
+        min-height: 50vh;
       }
       .hero-subtitle {
         font-size: 1.5rem;
@@ -106,7 +106,7 @@ html { scroll-behavior: smooth; }
         }
       }
       .hero-series-description {
-        margin-top: 15px;
+        margin-top: 10px;
         font-size: 1.4rem;
         max-width: 600px;
         line-height: 2rem;
