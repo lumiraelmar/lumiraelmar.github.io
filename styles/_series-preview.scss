@@ -1,81 +1,304 @@
-.series-preview {
-  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #000000 100%), url("../assets/breakingbad04.png");
-  background-size: cover;
-  padding: 60px 80px 130px;
-  color: #fff;
-  min-width: 100vw;
-  min-height: 800px;
-  font-family: 'Open Sans', sans-serif;
-  display: none;
-  @media (max-width: 650px) {
-    padding: 50px 30px 130px;
-    min-height: 70vh ;
-  }
-  .fa-arrow-left {
-    position: absolute;
-    top: 60;
-    left: 30;
-    color: #fff;
-    padding: 25px 0 0;
-    font-size: 2rem;
-  }
-  .series-logo {
-  }
-  .series-details {
-    margin: -40px 0 29px;
-    .span{
-      margin-right: 10px;
-    }
-    .coincidence-meter {
-      color: #009C04;
-      font-weight: bold;
-    }
-    .release-year {
-      color: #FFFFFF;
-    }
-    .appropiate-age {
-      color: #FFFFFF;
-      padding: 2px 6px;
-      border: 1px solid #979797;
-      border-radius: 8px;
-    }
-    .seasons-available {
-      color: #FFFFFF;
-      font-weight: bold;
-    }
-  }
-  .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 198px;
-    height: 60px;
-    background: rgba(157, 151, 151, 0.541521);
-    border-radius: 9px;
-    margin-right: 25px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.3rem;
-    font-weight: 300;
-  }
-  .button-1 {
-    background-color: #ED0A1D;
-  }
-  .far {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    border: 2px solid #fff;
-    border-radius: 50px;
-    padding: 7px;
-    margin-right: 10px;
-  }
-  .series-description {
-    margin-top: 20px;
-    font-size: 1.4rem;
-    max-width: 600px;
-    line-height: 2.1rem;
-    font-weight: 300;
-  }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+$mobile-size: 900px;
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+.wrapper {
+  min-width: 100vw;
+  font-family: 'Open Sans', sans-serif;
+  .header {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.801218);
+    .fas {
+      display: none;
+      @media (max-width: 950px) {
+        display: block;
+        color: #fff;
+        font-size: 2rem;
+        padding-left: 20px; 
+        margin-right: -35px; }
+    }
+    .title-link {
+      .header-title {
+        padding: 12px 85px;
+      }
+    }
+    .nav {
+      white-space: nowrap;
+      display: flex;
+      font-size: 1.2rem;
+      @media (max-width: 950px){
+      display: none;
+      }
+      .header-options {
+        color: #fff;
+        padding-right: 27px;
+        text-decoration: none;
+      }
+    }
+  }
+  .main {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    .series-preview {
+      background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #000000 100%), url("../assets/breakingbad04.png");
+      background-size: cover;
+      padding: 60px 80px 130px;
+      color: #fff;
+      min-width: 100vw;
+      min-height: 75vh;
+      font-family: 'Open Sans', sans-serif;
+      @media (max-width: $mobile-size) {
+        padding: 150px 30px 130px;
+        min-height: 40vh ;
+      }
+      .fa-arrow-left {
+        position: absolute;
+        top: 60;
+        left: 30;
+        color: #fff;
+        padding: 25px 0 0;
+        font-size: 2rem;
+      }
+      .series-logo {
+        @media (max-width: $mobile-size) {
+          display: none;
+        }
+      }
+      .preview-title {
+        display: none;
+        @media (max-width: $mobile-size) {
+          display: block;
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+      }
+      .series-details {
+        margin: -40px 0 29px;
+        font-size: 1.1rem;
+        @media (max-width: $mobile-size) {
+          margin: 15px 0 29px;
+        }
+        .span{
+          margin-right: 10px;
+        }
+        .coincidence-meter {
+          color: #009C04;
+          font-weight: bold;
+          @media (max-width: $mobile-size) {
+            display: none;
+          }
+        }
+        .release-year {
+          color: #FFFFFF;
+        }
+        .appropiate-age {
+          color: #FFFFFF;
+          padding: 2px 6px;
+          border: 1px solid #979797;
+          border-radius: 8px;
+          @media (max-width: $mobile-size) {
+            border: none;
+          }
+        }
+        .seasons-available {
+          color: #FFFFFF;
+          font-weight: bold;
+        }
+      }
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 198px;
+        height: 60px;
+        background: rgba(157, 151, 151, 0.541521);
+        border-radius: 9px;
+        margin-right: 25px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 300;
+        @media (max-width: $mobile-size) {
+          width: 131px;
+          height: 43px;
+          margin-right: 7px;
+          border-radius: 3px; 
+        }
+      }
+      .button-1 {
+        background-color: #ED0A1D;
+      }
+      .far {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        padding: 7px;
+        margin-right: 10px;
+        @media (max-width: $mobile-size) {
+          display: none;
+        }
+      }
+      .series-description {
+        margin-top: 20px;
+        font-size: 1.4rem;
+        max-width: 600px;
+        line-height: 2.1rem;
+        font-weight: 300;
+        @media (max-width: $mobile-size) {
+          display: none;
+        }
+      }
+    }
+    
+    .gradient {
+      width: 100%;
+      height: 150px;
+      margin-top: -150px;
+      background: rgb(0,0,0);
+      background: linear-gradient(0deg, rgba(0,0,0,1) 36%, rgba(0,0,0,0) 100%);
+    }
+    .series-courflix {
+      margin: -100px 0 50px;
+      padding: 0 80px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      -ms-overflow-style: none;
+      @media (max-width: $mobile-size) {
+        padding: 0 30px; 
+      }
+      ::-webkit-scrollbar {
+        display: none;
+        height: 0;
+        width: 0;
+        background-color: transparent;
+         }
+      .carousel-wrapper {
+        .series-title {
+          font-size: 1.5rem;
+          color: #fff;;
+          font-weight: bold;
+          @media (max-width: $mobile-size) {
+            font-size: 1.2rem; 
+          }
+        }
+        .series-carousel {
+          display: flex;
+          flex-direction: row;
+          overflow-x: auto;
+          scroll-snap-type: x mandatory;
+          scroll-snap-stop: always;
+          -webkit-overflow-scrolling: touch;
+          margin-top: 22px;
+          margin-bottom: 50px;
+          align-items: center;
+          @media (max-width: $mobile-size) {
+            margin-top: 15px;
+            margin-bottom: 25px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+          .series {
+            margin-right: 16px;
+            scroll-snap-align: start;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media (max-width: $mobile-size) {
+              display: flex;
+              flex-direction: row;
+              margin-bottom: 20px;
+            }
+            .preview-link {
+              
+              .series-img {
+                margin-bottom: 10px;
+                width: 341px;
+                height: 192px;
+                @media (max-width: $mobile-size) {
+                  width: 221px;
+                  height: 124px; 
+                }
+              }
+            }
+            .episode-info {
+              display: none;
+              @media (max-width: $mobile-size) {
+                display: flex;
+                flex-direction: column;
+                color: #fff;
+                margin-left: 10px;
+              }
+              .episode-title {
+                font-weight: bold;
+                margin-bottom: 15px;
+              }
+              .episode-description {
+              }
+            }
+          }            
+          }
+          }
+      }
+      }
+  }

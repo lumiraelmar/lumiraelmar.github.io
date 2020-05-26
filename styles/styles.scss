@@ -1,4 +1,4 @@
-$mobile-size: 415px;
+$mobile-size: 414px;
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
@@ -50,7 +50,7 @@ html { scroll-behavior: smooth; }
       background-image: url("../assets/portada.png");
       background-size: cover;
       padding: 175px 80px 130px;
-      min-height: 800px;
+      min-height: 75vh;
       color: #fff;
       display: block;
       //iphone 11 pro max
@@ -74,6 +74,7 @@ html { scroll-behavior: smooth; }
         font-weight: bold;
         @media (max-width: $mobile-size) {
           font-size: 1.5rem;
+          font-weight: bold;
           margin-bottom: -20px; }
       }
       .hero-button {
@@ -93,7 +94,8 @@ html { scroll-behavior: smooth; }
           width: 131px;
           height: 43px;
           margin-right: 7px;
-          border-radius: 3px; }
+          border-radius: 3px; 
+        }
       }
       .hero-series-subtitle {
         margin-top: 20px;
