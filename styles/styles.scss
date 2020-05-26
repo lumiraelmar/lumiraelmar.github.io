@@ -1,3 +1,4 @@
+//iphone 11 pro max
 $mobile-size: 414px;
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -49,13 +50,13 @@ html { scroll-behavior: smooth; }
     .hero-img {
       background-image: url("../assets/portada.png");
       background-size: cover;
+      background-position: center;
       padding: 175px 80px 130px;
       min-height: 75vh;
       color: #fff;
       display: block;
-      //iphone 11 pro max
       @media (max-width: $mobile-size) {
-        padding: 100px 30px;
+        padding: 100px 30px 150px;
         min-height: 40vh;
       }
       .hero-subtitle {
