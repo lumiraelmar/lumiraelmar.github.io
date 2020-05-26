@@ -53,7 +53,7 @@ table {
   border-spacing: 0;
 }
 
-*, *:before, *:after {
+* {
   box-sizing: border-box;
 }
 
@@ -71,18 +71,30 @@ html {
   font-weight: bold;
   position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.801218);
+}
+.wrapper .header .fas {
+  display: none;
+}
+@media (max-width: 950px) {
+  .wrapper .header .fas {
+    display: block;
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 20px;
+    margin-right: -35px;
+  }
 }
 .wrapper .header .title-link .header-title {
   padding: 12px 85px;
 }
 .wrapper .header .nav {
   white-space: nowrap;
-  display: inline;
+  display: flex;
   font-size: 1.2rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   .wrapper .header .nav {
     display: none;
   }
@@ -96,6 +108,7 @@ html {
   background-color: #000;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 .wrapper .main .hero-img {
   background-image: url("../assets/portada.png");
@@ -105,10 +118,21 @@ html {
   color: #fff;
   display: block;
 }
+@media (max-width: 650px) {
+  .wrapper .main .hero-img {
+    padding: 100px 30px;
+    min-height: 40vh;
+  }
+}
 .wrapper .main .hero-img .hero-subtitle {
   font-size: 1.5rem;
   margin-bottom: 18px;
   font-weight: bold;
+}
+@media (max-width: 650px) {
+  .wrapper .main .hero-img .hero-subtitle {
+    display: none;
+  }
 }
 .wrapper .main .hero-img .hero-title {
   font-size: 7.5rem;
@@ -116,6 +140,12 @@ html {
   line-height: 6rem;
   max-width: 650px;
   font-weight: bold;
+}
+@media (max-width: 650px) {
+  .wrapper .main .hero-img .hero-title {
+    font-size: 1.5rem;
+    margin-bottom: -20px;
+  }
 }
 .wrapper .main .hero-img .hero-button {
   display: inline-flex;
@@ -131,9 +161,22 @@ html {
   font-size: 1.3rem;
   font-weight: 300;
 }
+@media (max-width: 650px) {
+  .wrapper .main .hero-img .hero-button {
+    width: 131px;
+    height: 43px;
+    margin-right: 7px;
+    border-radius: 3px;
+  }
+}
 .wrapper .main .hero-img .hero-series-subtitle {
   margin-top: 20px;
   font-size: 1.4rem;
+}
+@media (max-width: 650px) {
+  .wrapper .main .hero-img .hero-series-subtitle {
+    display: none;
+  }
 }
 .wrapper .main .hero-img .hero-series-description {
   margin-top: 15px;
@@ -142,8 +185,10 @@ html {
   line-height: 2rem;
   font-weight: 300;
 }
-.wrapper .main .active {
-  display: none;
+@media (max-width: 650px) {
+  .wrapper .main .hero-img .hero-series-description {
+    display: none;
+  }
 }
 .wrapper .main .gradient {
   width: 100%;
@@ -160,6 +205,11 @@ html {
   width: 100%;
   -ms-overflow-style: none;
 }
+@media (max-width: 650px) {
+  .wrapper .main .series-courflix {
+    padding: 0 30px;
+  }
+}
 .wrapper .main .series-courflix ::-webkit-scrollbar {
   display: none;
   height: 0;
@@ -170,6 +220,11 @@ html {
   font-size: 1.5rem;
   color: #fff;
   font-weight: bold;
+}
+@media (max-width: 650px) {
+  .wrapper .main .series-courflix .carousel-wrapper .series-title {
+    font-size: 1.2rem;
+  }
 }
 .wrapper .main .series-courflix .carousel-wrapper .series-carousel {
   display: flex;
@@ -182,6 +237,12 @@ html {
   margin-bottom: 50px;
   align-items: center;
 }
+@media (max-width: 650px) {
+  .wrapper .main .series-courflix .carousel-wrapper .series-carousel {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+}
 .wrapper .main .series-courflix .carousel-wrapper .series-carousel .series {
   margin-right: 16px;
   scroll-snap-align: start;
@@ -192,11 +253,22 @@ html {
 .wrapper .main .series-courflix .carousel-wrapper .series-carousel .series .preview-link .series-img {
   margin-bottom: 10px;
 }
+@media (max-width: 650px) {
+  .wrapper .main .series-courflix .carousel-wrapper .series-carousel .series .preview-link .series-img {
+    width: 221px;
+    height: 124px;
+  }
+}
 .wrapper .main .series-courflix .carousel-wrapper .series-carousel .series .grey-loading {
   margin-top: 5px;
   height: 7px;
   width: 280px;
   background-color: grey;
+}
+@media (max-width: 650px) {
+  .wrapper .main .series-courflix .carousel-wrapper .series-carousel .series .grey-loading {
+    display: none;
+  }
 }
 .wrapper .main .series-courflix .carousel-wrapper .series-carousel .series .grey-loading .red-loading-1 {
   width: 43%;
@@ -228,6 +300,12 @@ html {
   min-height: 800px;
   font-family: "Open Sans", sans-serif;
   display: none;
+}
+@media (max-width: 650px) {
+  .series-preview {
+    padding: 50px 30px 130px;
+    min-height: 70vh;
+  }
 }
 .series-preview .fa-arrow-left {
   position: absolute;

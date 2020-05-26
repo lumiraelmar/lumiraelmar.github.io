@@ -7,7 +7,10 @@
   min-height: 800px;
   font-family: 'Open Sans', sans-serif;
   display: none;
-
+  @media (max-width: 650px) {
+    padding: 50px 30px 130px;
+    min-height: 70vh ;
+  }
   .fa-arrow-left {
     position: absolute;
     top: 60;
