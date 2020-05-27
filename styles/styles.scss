@@ -1,5 +1,6 @@
 //iphone 11 pro max
-$mobile-size: 414px;
+$mobile-breakpoint: 414px;
+$tablet-breakpoint: 950px;
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
@@ -14,14 +15,18 @@ html { scroll-behavior: smooth; }
     width: 100%;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.801218);
+    @media (max-width: $tablet-breakpoint){
+      background-color:  #000;
+    }
     .fas {
       display: none;
-      @media (max-width: 950px) {
+      @media (max-width: $tablet-breakpoint) {
         display: block;
         color: #fff;
         font-size: 2rem;
         padding-left: 20px; 
-        margin-right: -35px; }
+        margin-right: -35px; 
+      }
     }
     .title-link {
       .header-title {
@@ -32,13 +37,36 @@ html { scroll-behavior: smooth; }
       white-space: nowrap;
       display: flex;
       font-size: 1.2rem;
-      @media (max-width: 950px){
-      display: none;
+      @media (max-width: $tablet-breakpoint){
+      position: absolute;
+      top: 59;
+      left: 0;
+      height: 100vh;
+      z-index: 1;
+      flex-direction: column;
+      background-color:  #000;
       }
-      .header-options {
-        color: #fff;
-        padding-right: 27px;
-        text-decoration: none;
+      .navbar-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        @media (max-width: $tablet-breakpoint){ 
+          display: none;
+          flex-direction: column;
+        }
+        .navbar-list-item {
+            text-decoration: none;
+            display: inline;
+            @media (max-width: $tablet-breakpoint){ 
+              padding: 24px 82px 0 13px;
+              font-weight: normal;
+            }
+          .header-options {
+            color: #fff;
+            text-decoration: none;
+            padding-right: 27px;
+          }
+        }
       }
     }
   }
@@ -55,7 +83,7 @@ html { scroll-behavior: smooth; }
       min-height: 85vh;
       color: #fff;
       display: block;
-      @media (max-width: $mobile-size) {
+      @media (max-width: $mobile-breakpoint) {
         padding: 100px 30px 150px;
         min-height: 50vh;
       }
@@ -63,7 +91,7 @@ html { scroll-behavior: smooth; }
         font-size: 1.5rem;
         margin-bottom: 18px;
         font-weight: bold;
-        @media (max-width: $mobile-size) {
+        @media (max-width: $mobile-breakpoint) {
           display: none;
         }
       }
@@ -73,7 +101,7 @@ html { scroll-behavior: smooth; }
         line-height: 6rem;
         max-width: 650px;
         font-weight: bold;
-        @media (max-width: $mobile-size) {
+        @media (max-width: $mobile-breakpoint) {
           font-size: 1.5rem;
           font-weight: bold;
           margin-bottom: -20px; }
@@ -91,7 +119,7 @@ html { scroll-behavior: smooth; }
         color: #fff;
         font-size: 1.3rem;
         font-weight: 300;
-        @media (max-width: $mobile-size) {
+        @media (max-width: $mobile-breakpoint) {
           width: 131px;
           height: 43px;
           margin-right: 7px;
@@ -101,7 +129,7 @@ html { scroll-behavior: smooth; }
       .hero-series-subtitle {
         margin-top: 20px;
         font-size: 1.4rem;
-        @media (max-width: $mobile-size) {
+        @media (max-width: $mobile-breakpoint) {
           display: none;
         }
       }
@@ -111,7 +139,7 @@ html { scroll-behavior: smooth; }
         max-width: 600px;
         line-height: 2rem;
         font-weight: 300;
-        @media (max-width: $mobile-size) {
+        @media (max-width: $mobile-breakpoint) {
           display: none;
         }
       }
@@ -131,7 +159,7 @@ html { scroll-behavior: smooth; }
       flex-direction: column;
       width: 100%;
       -ms-overflow-style: none;
-      @media (max-width: $mobile-size) {
+      @media (max-width: $mobile-breakpoint) {
         padding: 0 30px; 
       }
       ::-webkit-scrollbar {
@@ -145,9 +173,11 @@ html { scroll-behavior: smooth; }
           font-size: 1.5rem;
           color: #fff;;
           font-weight: bold;
-          @media (max-width: $mobile-size) {
+          @media (max-width: $mobile-breakpoint) {
             font-size: 1.2rem; 
           }
+        }
+        .fas {
         }
         .series-carousel {
           display: flex;
@@ -159,7 +189,7 @@ html { scroll-behavior: smooth; }
           margin-top: 22px;
           margin-bottom: 50px;
           align-items: center;
-          @media (max-width: $mobile-size) {
+          @media (max-width: $mobile-breakpoint) {
             margin-top: 15px;
             margin-bottom: 25px;
         }
@@ -173,7 +203,7 @@ html { scroll-behavior: smooth; }
               
               .series-img {
                 margin-bottom: 10px;
-                @media (max-width: $mobile-size) {
+                @media (max-width: $mobile-breakpoint) {
                   width: 220px;
                   height: 124px; 
                 }
@@ -184,7 +214,7 @@ html { scroll-behavior: smooth; }
               height: 7px;
               width: 280px;
               background-color: grey;
-              @media (max-width: $mobile-size) {
+              @media (max-width: $mobile-breakpoint) {
                 display: none; 
               }
               .red-loading-1 {
