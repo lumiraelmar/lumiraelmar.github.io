@@ -281,9 +281,6 @@ html {
 }
 .wrapper .main .series-courflix .carousel-wrapper .series-carousel .series {
   margin-right: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .wrapper .main .series-courflix .carousel-wrapper .series-carousel .series .preview-link .series-img {
   margin-bottom: 10px;
