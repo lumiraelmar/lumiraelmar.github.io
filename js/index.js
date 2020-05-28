@@ -1,31 +1,20 @@
-const series = document.querySelectorAll(".series-js");
-const link = document.querySelectorAll(".link-js");
-const hero = document.querySelector(".hero-img-js");
-const preview = document.querySelector(".series-preview-js");
 const menuIcon = document.querySelector(".fa-bars-js");
-const hamburgerMenu = document.querySelector(".navbar-list-js")
+const navbar = document.querySelector(".navbar-list-js");
+const nav = document.querySelector(".nav-js");
+const series = document.querySelector(".series-js");
 
-function clickPreview() {
-  hero.style.display = "none";
-  preview.style.display = "block";
-}
 
-function home() {
-  hero.style.display = "block";
-  preview.style.display = "none";
-}
-
-function showNavbar() {
+$(document).ready(function(){
   
-}
+  $('.series-carousel').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: true,
+    draggable: true,
+    infinite: true,
+    touchThreshold: 100,
+    variableWidth: true,
+    accesibility: true,
+  });
 
-series.forEach (function(item) {
-  item.addEventListener('click', clickPreview); 
 });
-
-link.forEach (function(item) {
-  item.addEventListener('click', home); 
-});
-
-menuIcon.addEventListener('click', showNavbar);
-

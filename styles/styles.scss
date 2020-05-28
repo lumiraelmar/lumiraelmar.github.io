@@ -53,6 +53,9 @@ html { scroll-behavior: smooth; }
         @media (max-width: $tablet-breakpoint){ 
           display: none;
           flex-direction: column;
+          &.open {
+            display: flex;
+          }
         }
         .navbar-list-item {
             text-decoration: none;
@@ -78,7 +81,6 @@ html { scroll-behavior: smooth; }
     .hero-img {
       background-image: url("../assets/portada.png");
       background-size: cover;
-      background-position: center;
       padding: 160px 80px 120px;
       min-height: 85vh;
       color: #fff;
@@ -86,6 +88,7 @@ html { scroll-behavior: smooth; }
       @media (max-width: $mobile-breakpoint) {
         padding: 100px 30px 150px;
         min-height: 50vh;
+        background-position: center;
       }
       .hero-subtitle {
         font-size: 1.5rem;
@@ -180,25 +183,26 @@ html { scroll-behavior: smooth; }
         .fas {
         }
         .series-carousel {
-          display: flex;
-          flex-direction: row;
-          overflow-x: auto;
-          scroll-snap-type: x mandatory;
-          scroll-snap-stop: always;
-          -webkit-overflow-scrolling: touch;
+          //display: flex;
+          //flex-direction: row;
+          //overflow-x: auto;
+          //scroll-snap-type: x mandatory;
+          //scroll-snap-stop: always;
+          //-webkit-overflow-scrolling: touch;
           margin-top: 22px;
           margin-bottom: 50px;
-          align-items: center;
+          //align-items: center;
           @media (max-width: $mobile-breakpoint) {
             margin-top: 15px;
             margin-bottom: 25px;
         }
           .series {
             margin-right: 16px;
-            scroll-snap-align: start;
+            //scroll-snap-align: start;
             display: flex;
-            flex-direction: column;
+            //flex-direction: column;
             align-items: center;
+            justify-content: center;
             .preview-link {
               
               .series-img {

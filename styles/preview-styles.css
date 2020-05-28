@@ -145,7 +145,6 @@ html {
 .wrapper .main .series-preview {
   background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #000000 100%), url("../assets/breakingbad04.png");
   background-size: cover;
-  background-position: center;
   padding: 30px 80px 150px;
   color: #fff;
   min-width: 100vw;
@@ -156,6 +155,7 @@ html {
   .wrapper .main .series-preview {
     padding: 100px 30px 130px;
     min-height: 50vh;
+    background-position: center;
   }
 }
 .wrapper .main .series-preview .fa-arrow-left {
