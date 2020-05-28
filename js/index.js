@@ -15,6 +15,14 @@ $(document).ready(function(){
     touchThreshold: 100,
     variableWidth: true,
     accesibility: true,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+        }
+      }
+    ]
   });
 
 });
