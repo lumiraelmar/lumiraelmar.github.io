@@ -13,31 +13,11 @@ menuIcon.onclick = function () {
   }
 
 
-//$(document).ready(function(){
-  
-  //$('.series-carousel').slick({
-   // slidesToShow: 2,
-   // slidesToScroll: 1,
-   // arrows: true,
-   // draggable: true,
-   // infinite: true,
-   // touchThreshold: 100,
-   // accesibility: true,
-   // swipeToSlide: true,
-   // variableWidth: true,
-   // responsive: [
-   //   {
-   //     breakpoint: 480,
-   //     settings: "unslick"
-   //     }
-   // ]
- // });
-//});
 
 
-$slick_slider = $('.series-carousel');
+ $slick_slider = $('.series-carousel');
   settings = {
-    slidesToShow: 5,
+    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
     draggable: true,
