@@ -13,9 +13,29 @@ menuIcon.onclick = function () {
   }
 
 
-$(document).ready(function(){
+//$(document).ready(function(){
   
-  $('.series-carousel').slick({
+  //$('.series-carousel').slick({
+   // slidesToShow: 2,
+   // slidesToScroll: 1,
+   // arrows: true,
+   // draggable: true,
+   // infinite: true,
+   // touchThreshold: 100,
+   // accesibility: true,
+   // swipeToSlide: true,
+   // variableWidth: true,
+   // responsive: [
+   //   {
+   //     breakpoint: 480,
+   //     settings: "unslick"
+   //     }
+   // ]
+ // });
+//});
+
+$slick_slider = $('.series-carousel');
+settings = {
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
@@ -25,11 +45,19 @@ $(document).ready(function(){
     accesibility: true,
     swipeToSlide: true,
     variableWidth: true,
-    responsive: [
-      {
-        breakpoint: 480,
-        settings: "unslick"
-        }
-    ]
-  });
+}
+$slick_slider.slick(settings);
+
+// reslick only if it's not slick()
+$(window).on('resize', function() {
+  if ($(window).width() < 480) {
+    if ($slick_slider.hasClass('slick-initialized')) {
+      $slick_slider.slick('unslick');
+    }
+    return
+  }
+
+  if (!$slick_slider.hasClass('slick-initialized')) {
+    return $slick_slider.slick(settings);
+  }
 });
