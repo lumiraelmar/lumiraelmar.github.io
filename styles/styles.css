@@ -291,7 +291,7 @@ html {
   }
 }
 .wrapper .main .series-courflix .carousel-wrapper .series-carousel .series .grey-loading {
-  margin-top: 5px;
+  margin: 5px auto 0;
   height: 7px;
   width: 280px;
   background-color: grey;
