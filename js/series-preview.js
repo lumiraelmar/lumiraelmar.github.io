@@ -34,8 +34,9 @@ menuIcon.onclick = function () {
  // });
 //});
 
-$slick_slider = $('.series-courflix-preview');
-settings = {
+
+$slick_slider = $('.series-carousel');
+  settings = {
     slidesToShow: 5,
     slidesToScroll: 1,
     arrows: true,
@@ -45,19 +46,19 @@ settings = {
     accesibility: true,
     swipeToSlide: true,
     variableWidth: true,
-}
-$slick_slider.slick(settings);
+  }
+  $slick_slider.slick(settings);
 
-// reslick only if it's not slick()
-$(window).on('resize', function() {
-  if ($(window).width() < 600) {
-    if ($slick_slider.hasClass('slick-initialized')) {
-      $slick_slider.slick('unslick');
+  // reslick only if it's not slick()
+  $(window).on('resize', function() {
+    if ($(window).width() < 600) {
+      if ($slick_slider.hasClass('slick-initialized')) {
+        $slick_slider.slick('unslick');
+      }
+      return
     }
-    return
-  }
 
-  if (!$slick_slider.hasClass('slick-initialized')) {
-    return $slick_slider.slick(settings);
-  }
-});
+    if (!$slick_slider.hasClass('slick-initialized')) {
+      return $slick_slider.slick(settings);
+    }
+  });

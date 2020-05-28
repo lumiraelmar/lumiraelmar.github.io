@@ -466,8 +466,6 @@ html {
 .wrapper .main .series-courflix-preview {
   margin: -100px 0 50px;
   padding: 0 80px;
-  display: flex;
-  flex-direction: column;
   width: 100%;
   -ms-overflow-style: none;
 }
@@ -495,7 +493,6 @@ html {
 .wrapper .main .series-courflix-preview .carousel-wrapper .series-carousel {
   margin-top: 22px;
   margin-bottom: 50px;
-  align-items: center;
 }
 @media (max-width: 600px) {
   .wrapper .main .series-courflix-preview .carousel-wrapper .series-carousel {
@@ -507,8 +504,6 @@ html {
 }
 .wrapper .main .series-courflix-preview .carousel-wrapper .series-carousel .series {
   margin-right: 16px;
-  display: flex;
-  align-items: center;
 }
 @media (max-width: 600px) {
   .wrapper .main .series-courflix-preview .carousel-wrapper .series-carousel .series {
