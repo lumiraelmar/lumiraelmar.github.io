@@ -15,6 +15,7 @@ $(document).ready(function(){
     touchThreshold: 100,
     variableWidth: true,
     accesibility: true,
+    swipeToSlide: true,
     responsive: [
       {
         breakpoint: 480,
