@@ -34,7 +34,7 @@ menuIcon.onclick = function () {
  // });
 //});
 
-$slick_slider = $('.series-carousel');
+$slick_slider = $('.series-courflix-preview');
 settings = {
     slidesToShow: 5,
     slidesToScroll: 1,
