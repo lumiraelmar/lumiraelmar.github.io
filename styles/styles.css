@@ -250,7 +250,6 @@ html {
 @media (max-width: 480px) {
   .wrapper .main .series-courflix {
     padding: 0 25px;
-    margin: -100px 0 10px;
   }
 }
 .wrapper .main .series-courflix ::-webkit-scrollbar {
