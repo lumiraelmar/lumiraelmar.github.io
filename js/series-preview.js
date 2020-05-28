@@ -50,7 +50,7 @@ $slick_slider.slick(settings);
 
 // reslick only if it's not slick()
 $(window).on('resize', function() {
-  if ($(window).width() < 480) {
+  if ($(window).width() < 600) {
     if ($slick_slider.hasClass('slick-initialized')) {
       $slick_slider.slick('unslick');
     }
