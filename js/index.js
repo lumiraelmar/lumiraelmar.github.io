@@ -16,7 +16,7 @@ menuIcon.onclick = function () {
 $(document).ready(function(){
   
   $('.series-carousel').slick({
-    slidesToShow: 2,
+    slidesToShow: 5,
     slidesToScroll: 1,
     arrows: true,
     draggable: true,

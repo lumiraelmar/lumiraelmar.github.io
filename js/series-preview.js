@@ -36,7 +36,7 @@ menuIcon.onclick = function () {
 
 $slick_slider = $('.series-carousel');
 settings = {
-    slidesToShow: 2,
+    slidesToShow: 5,
     slidesToScroll: 1,
     arrows: true,
     draggable: true,

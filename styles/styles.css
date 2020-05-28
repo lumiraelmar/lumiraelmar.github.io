@@ -537,6 +537,7 @@ html {
     flex-direction: column;
     color: #fff;
     margin-left: 10px;
+    font-size: 1rem;
   }
 }
 .wrapper .main .series-courflix-preview .carousel-wrapper .series-carousel .series .episode-info .episode-title {
