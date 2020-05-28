@@ -39,6 +39,8 @@
       z-index: 1;
       flex-direction: column;
       background-color:  #000;
+      max-width: 50vh;
+      white-space: normal;
       }
       .navbar-list {
         list-style-type: none;
@@ -53,9 +55,9 @@
         }
         .navbar-list-item {
             text-decoration: none;
-            display: inline;
+            display: inline-flex;
             @media (max-width: $tablet-breakpoint){ 
-              padding: 24px 82px 0 13px;
+              padding: 24px 0 0 13px;
               font-weight: normal;
             }
           .header-options {
