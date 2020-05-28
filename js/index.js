@@ -4,26 +4,35 @@ const nav = document.querySelector(".nav-js");
 const series = document.querySelector(".series-js");
 
 
+menuIcon.onclick = function () {
+  if(navbar.classList.contains("open")) {
+    navbar.classList.remove("open")
+  } else {
+    navbar.classList.add("open")
+  }
+  }
+
+
 $(document).ready(function(){
   
   $('.series-carousel').slick({
-    slidesToShow: 5,
+    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
     draggable: true,
     infinite: true,
     touchThreshold: 100,
-    variableWidth: true,
     accesibility: true,
     swipeToSlide: true,
+    variableWidth: true,
     responsive: [
       {
         breakpoint: 480,
         settings: {
           arrows: false,
+          variableWidth: true,
         }
-      }
+        }
     ]
   });
-
 });
