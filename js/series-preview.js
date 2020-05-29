@@ -13,10 +13,7 @@ menuIcon.onclick = function () {
   }
 
 
-
-
- $slick_slider = $('.series-carousel');
-  settings = {
+  const settings = {
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
@@ -26,19 +23,22 @@ menuIcon.onclick = function () {
     accesibility: true,
     swipeToSlide: true,
     variableWidth: true,
-  }
-  $slick_slider.slick(settings);
-
-  // reslick only if it's not slick()
-  $(window).on('resize', function() {
-    if ($(window).width() < 600) {
-      if ($slick_slider.hasClass('slick-initialized')) {
-        $slick_slider.slick('unslick');
-      }
-      return
+    responsive: [ 
+      {
+      breakpoint: 600,
+      settings: 'unslick'
     }
+    ]
+  };
 
-    if (!$slick_slider.hasClass('slick-initialized')) {
-      return $slick_slider.slick(settings);
+  const carrousel = $(".series-carousel");
+
+  $(document).ready(function(){
+    carrousel.slick(settings);
+  })
+
+  $(window).on('resize', function() {
+    if($(window).width() > 600 && !carrousel.hasClass('slick-initialized')) {
+      carrousel.slick(settings);
     }
   });
