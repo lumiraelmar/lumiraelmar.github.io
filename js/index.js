@@ -1,7 +1,6 @@
 const menuIcon = document.querySelector(".fa-bars-js");
 const navbar = document.querySelector(".navbar-list-js");
-const nav = document.querySelector(".nav-js");
-const series = document.querySelector(".series-js");
+const links = document.querySelectorAll(".navbar-list-item");
 
 
 menuIcon.onclick = function () {
@@ -11,6 +10,11 @@ menuIcon.onclick = function () {
     navbar.classList.add("open")
   }
   }
+
+
+  links.forEach(link => link.addEventListener("click", ()=>{
+    navbar.classList.remove("open");
+  }))
 
 
 $(document).ready(function(){
