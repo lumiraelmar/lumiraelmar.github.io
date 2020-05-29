@@ -165,6 +165,12 @@ html {
   color: #fff;
   display: block;
 }
+@media screen and (max-width: 950px) {
+  .wrapper .main .hero-img {
+    padding: 160px 50px 120px;
+    min-height: 65vh;
+  }
+}
 @media screen and (max-width: 480px) {
   .wrapper .main .hero-img {
     padding: 100px 30px 150px;
@@ -336,6 +342,12 @@ html {
   min-width: 100vw;
   min-height: 85vh;
   font-family: "Open Sans", sans-serif;
+}
+@media screen and (max-width: 950px) {
+  .wrapper .main .series-preview {
+    padding: 160px 50px 120px;
+    min-height: 65vh;
+  }
 }
 @media screen and (max-width: 480px) {
   .wrapper .main .series-preview {

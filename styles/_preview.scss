@@ -11,6 +11,10 @@
       min-width: 100vw;
       min-height: 85vh;
       font-family: 'Open Sans', sans-serif;
+      @media screen and (max-width: $tablet-breakpoint) {
+        padding: 160px 50px 120px;
+        min-height: 65vh;
+      }
       @media screen and (max-width: $mobile-breakpoint) {
         padding: 100px 30px 130px;
         min-height: 50vh ;
