@@ -11,7 +11,7 @@
       min-width: 100vw;
       min-height: 85vh;
       font-family: 'Open Sans', sans-serif;
-      @media (max-width: $mobile-breakpoint) {
+      @media screen and (max-width: $mobile-breakpoint) {
         padding: 100px 30px 130px;
         min-height: 50vh ;
         background-position: center;
@@ -23,18 +23,18 @@
         color: #fff;
         padding: 25px 0 0;
         font-size: 2rem;
-        @media (max-width: $mobile-breakpoint) {
+        @media screen and (max-width: $mobile-breakpoint) {
           font-size: 1rem;
         }
       }
       .series-logo {
-        @media (max-width: $mobile-breakpoint) {
+        @media screen and (max-width: $mobile-breakpoint) {
           display: none;
         }
       }
       .preview-title {
         display: none;
-        @media (max-width: $mobile-breakpoint) {
+        @media screen and (max-width: $mobile-breakpoint) {
           display: block;
           font-size: 1.5rem;
           font-weight: bold;
@@ -43,7 +43,7 @@
       .series-details {
         margin: -40px 0 40px;
         font-size: 1.1rem;
-        @media (max-width: $mobile-breakpoint) {
+        @media screen and (max-width: $mobile-breakpoint) {
           margin: 15px 0 17px;
         }
         .span{
@@ -52,7 +52,7 @@
         .coincidence-meter {
           color: #009C04;
           font-weight: bold;
-          @media (max-width: $mobile-breakpoint) {
+          @media screen and (max-width: $mobile-breakpoint) {
             display: none;
           }
         }
@@ -64,7 +64,7 @@
           padding: 2px 6px;
           border: 1px solid #979797;
           border-radius: 8px;
-          @media (max-width: $mobile-breakpoint) {
+          @media screen and (max-width: $mobile-breakpoint) {
             border: none;
           }
         }
@@ -86,7 +86,7 @@
         color: #fff;
         font-size: 1.3rem;
         font-weight: 300;
-        @media (max-width: $mobile-breakpoint) {
+        @media screen and (max-width: $mobile-breakpoint) {
           width: 131px;
           height: 43px;
           margin-right: 7px;
@@ -105,7 +105,7 @@
         border-radius: 50px;
         padding: 7px;
         margin-right: 10px;
-        @media (max-width: $mobile-breakpoint) {
+        @media screen and (max-width: $mobile-breakpoint) {
           display: none;
         }
       }
@@ -115,7 +115,7 @@
         max-width: 600px;
         line-height: 2.1rem;
         font-weight: 300;
-        @media (max-width: $mobile-breakpoint) {
+        @media screen and (max-width: $mobile-breakpoint) {
           display: none;
         }
       }
@@ -123,11 +123,9 @@
     .series-courflix-preview {
       margin: -100px 0 50px;
       padding: 0 80px;
-      //display: flex;
-      //flex-direction: column;
       width: 100%;
       -ms-overflow-style: none;
-      @media (max-width: $mobile-breakpoint) {
+      @media screen and (max-width: $mobile-breakpoint) {
         padding: 0 30px; 
       }
       ::-webkit-scrollbar {
@@ -141,14 +139,14 @@
           font-size: 1.5rem;
           color: #fff;
           font-weight: bold;
-          @media (max-width: $mobile-breakpoint) {
+          @media screen and (max-width: $mobile-breakpoint) {
             font-size: 1.2rem; 
           }
         }
         .series-carousel {
           margin-top: 22px;
           margin-bottom: 50px;
-          @media (max-width: $mobile-breakpoint) {
+          @media screen and (max-width: $mobile-breakpoint) {
             margin-top: 15px;
             margin-bottom: 25px;
             flex-direction: column;
@@ -156,7 +154,7 @@
         }
           .series {
             margin-right: 16px;
-            @media (max-width: $mobile-breakpoint) {
+            @media screen and (max-width: $mobile-breakpoint) {
               display: flex;
               flex-direction: row;
               margin-bottom: 20px;
@@ -167,7 +165,7 @@
                 margin-bottom: 10px;
                 width: 341px;
                 height: 192px;
-                @media (max-width: $mobile-breakpoint) {
+                @media screen and (max-width: $mobile-breakpoint) {
                   width: 131px;
                   height: 75px; 
                 }
@@ -175,7 +173,7 @@
             }
             .episode-info {
               display: none;
-              @media (max-width: $mobile-breakpoint) {
+              @media screen and (max-width: $mobile-breakpoint) {
                 display: flex;
                 flex-direction: column;
                 color: #fff;

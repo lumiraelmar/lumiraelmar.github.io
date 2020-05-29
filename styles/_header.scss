@@ -8,12 +8,12 @@
     width: 100%;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.801218);
-    @media (max-width: $tablet-breakpoint){
+    @media screen and (max-width: $tablet-breakpoint){
       background-color:  #000;
     }
     .fas {
       display: none;
-      @media (max-width: $tablet-breakpoint) {
+      @media screen and (max-width: $tablet-breakpoint) {
         display: block;
         color: #fff;
         font-size: 2rem;
@@ -31,7 +31,7 @@
       white-space: nowrap;
       display: flex;
       font-size: 1.2rem;
-      @media (max-width: $tablet-breakpoint){
+      @media screen and (max-width: $tablet-breakpoint){
       position: absolute;
       top: 59;
       left: 0;
@@ -46,7 +46,7 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
-        @media (max-width: $tablet-breakpoint){ 
+        @media screen and (max-width: $tablet-breakpoint){ 
           display: none;
           flex-direction: column;
           &.open {
@@ -56,7 +56,7 @@
         .navbar-list-item {
             text-decoration: none;
             display: inline-flex;
-            @media (max-width: $tablet-breakpoint){ 
+            @media screen and (max-width: $tablet-breakpoint){ 
               padding: 24px 0 0 13px;
               font-weight: normal;
             }

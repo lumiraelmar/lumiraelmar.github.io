@@ -10,7 +10,7 @@
       min-height: 85vh;
       color: #fff;
       display: block;
-      @media (max-width: $mobile-breakpoint) {
+      @media screen and (max-width: $mobile-breakpoint) {
         padding: 100px 30px 150px;
         min-height: 50vh;
         background-position: center;
@@ -19,7 +19,7 @@
         font-size: 1.5rem;
         margin-bottom: 18px;
         font-weight: bold;
-        @media (max-width: $mobile-breakpoint) {
+        @media screen and (max-width: $mobile-breakpoint) {
           display: none;
         }
       }
@@ -29,7 +29,7 @@
         line-height: 6rem;
         max-width: 650px;
         font-weight: bold;
-        @media (max-width: $mobile-breakpoint) {
+        @media screen and (max-width: $mobile-breakpoint) {
           font-size: 1.5rem;
           font-weight: bold;
           margin-bottom: -20px; }
@@ -47,7 +47,7 @@
         color: #fff;
         font-size: 1.3rem;
         font-weight: 300;
-        @media (max-width: $mobile-breakpoint) {
+        @media screen and (max-width: $mobile-breakpoint) {
           width: 131px;
           height: 43px;
           margin-right: 7px;
@@ -57,7 +57,7 @@
       .hero-series-subtitle {
         margin-top: 20px;
         font-size: 1.4rem;
-        @media (max-width: $mobile-breakpoint) {
+        @media screen and (max-width: $mobile-breakpoint) {
           display: none;
         }
       }
@@ -67,7 +67,7 @@
         max-width: 600px;
         line-height: 2rem;
         font-weight: 300;
-        @media (max-width: $mobile-breakpoint) {
+        @media screen and (max-width: $mobile-breakpoint) {
           display: none;
         }
       }
@@ -79,7 +79,7 @@
       flex-direction: column;
       width: 100%;
       -ms-overflow-style: none;
-      @media (max-width: $mobile-breakpoint) {
+      @media screen and (max-width: $mobile-breakpoint) {
         padding: 0 25px; 
       }
       ::-webkit-scrollbar {
@@ -93,7 +93,7 @@
           font-size: 1.5rem;
           color: #fff;;
           font-weight: bold;
-          @media (max-width: $mobile-breakpoint) {
+          @media screen and (max-width: $mobile-breakpoint) {
             font-size: 1.1rem; 
           }
         }
@@ -102,20 +102,17 @@
         .series-carousel {
           margin-top: 22px;
           margin-bottom: 50px;
-          @media (max-width: $mobile-breakpoint) {
+          @media screen and (max-width: $mobile-breakpoint) {
             margin-top: 10px;
             margin-bottom: 15px;
         }
           .series {
             margin-right: 16px;
-            //display: flex;
-            //align-items: center;
-            //justify-content: center;
             .preview-link {
               
               .series-img {
                 margin-bottom: 10px;
-                @media (max-width: $mobile-breakpoint) {
+                @media screen and (max-width: $mobile-breakpoint) {
                   width: 220px;
                   height: 124px; 
                 }
@@ -126,7 +123,7 @@
               height: 7px;
               width: 280px;
               background-color: grey;
-              @media (max-width: $mobile-breakpoint) {
+              @media screen and (max-width: $mobile-breakpoint) {
                 display: none; 
               }
               .red-loading-1 {
