@@ -129,6 +129,9 @@
       padding: 0 80px;
       width: 100%;
       -ms-overflow-style: none;
+      @media screen and (max-width: $tablet-breakpoint) {
+        padding: 0 50px;
+      }
       @media screen and (max-width: $mobile-breakpoint) {
         padding: 0 30px; 
       }

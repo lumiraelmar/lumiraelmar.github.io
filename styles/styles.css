@@ -165,7 +165,7 @@ html {
   color: #fff;
   display: block;
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1024px) {
   .wrapper .main .hero-img {
     padding: 160px 50px 120px;
     min-height: 65vh;
@@ -253,9 +253,14 @@ html {
   width: 100%;
   -ms-overflow-style: none;
 }
+@media screen and (max-width: 1024px) {
+  .wrapper .main .series-courflix {
+    padding: 0 50px;
+  }
+}
 @media screen and (max-width: 480px) {
   .wrapper .main .series-courflix {
-    padding: 0 25px;
+    padding: 0 30px;
   }
 }
 .wrapper .main .series-courflix ::-webkit-scrollbar {
@@ -343,7 +348,7 @@ html {
   min-height: 85vh;
   font-family: "Open Sans", sans-serif;
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1024px) {
   .wrapper .main .series-preview {
     padding: 160px 50px 120px;
     min-height: 65vh;
@@ -480,6 +485,11 @@ html {
   padding: 0 80px;
   width: 100%;
   -ms-overflow-style: none;
+}
+@media screen and (max-width: 1024px) {
+  .wrapper .main .series-courflix-preview {
+    padding: 0 50px;
+  }
 }
 @media screen and (max-width: 480px) {
   .wrapper .main .series-courflix-preview {
