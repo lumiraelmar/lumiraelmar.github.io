@@ -292,6 +292,10 @@ html {
 .wrapper .main .series-courflix .carousel-wrapper .series-carousel .series {
   margin-right: 16px;
 }
+.wrapper .main .series-courflix .carousel-wrapper .series-carousel .series .preview-link {
+  outline: none;
+  border: 0;
+}
 .wrapper .main .series-courflix .carousel-wrapper .series-carousel .series .preview-link .series-img {
   margin-bottom: 10px;
 }
@@ -533,6 +537,10 @@ html {
     flex-direction: row;
     margin-bottom: 20px;
   }
+}
+.wrapper .main .series-courflix-preview .carousel-wrapper .series-carousel .series .preview-link {
+  outline: none;
+  border: 0;
 }
 .wrapper .main .series-courflix-preview .carousel-wrapper .series-carousel .series .preview-link .series-img {
   margin-bottom: 10px;
