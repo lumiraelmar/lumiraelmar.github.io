@@ -158,7 +158,7 @@ html {
   min-height: 100vh;
 }
 .wrapper .main .hero-img {
-  background-image: url("../assets/doctorwho1.jpg");
+  background-image: url("../assets/portada.png");
   background-size: cover;
   padding: 160px 80px 120px;
   min-height: 85vh;
